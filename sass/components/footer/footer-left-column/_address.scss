@@ -1,0 +1,35 @@
+.comp-address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    // margin-top: 20px;
+    // margin-right: 70px;
+  }
+}
+
+// .comp-address__list {
+//   margin-top: 8px;
+// }
+
+.comp-address__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.comp-address,
+.comp-address__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.comp-address__item {
+  margin-top: 8px;
+}

@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  &--accent-color {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+}
