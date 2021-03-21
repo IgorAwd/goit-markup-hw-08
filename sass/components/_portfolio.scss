@@ -9,13 +9,20 @@
 }
 
 .portfolio__list-btn {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 50px;
   }
 
@@ -106,6 +113,12 @@
   @media screen and (min-width: 768px) {
     & img {
       width: 354px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & img {
+      width: 370px;
     }
   }
 }
