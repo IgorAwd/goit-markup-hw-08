@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero480.jpg);
+    url(../images/hero480.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero480-2x.jpg);
+      url(../images/hero480-2x.jpg);
   }
 }
 
@@ -39,7 +39,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero768.jpg);
+      url(../images/hero768.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -50,7 +50,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero768-2x.jpg);
+        url(../images/hero768-2x.jpg);
     }
   }
 }
@@ -65,7 +65,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero1200.jpg);
+      url(../images/hero1200.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -76,15 +76,10 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero1200-2x.jpg);
+        url(../images/hero1200-2x.jpg);
     }
   }
 }
-
-// .hero__container {
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-// }
 
 .hero__title {
   margin-bottom: 30px;
