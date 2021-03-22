@@ -476,6 +476,8 @@ header {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -486,6 +488,7 @@ header {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -545,6 +548,12 @@ header {
 }
 
 .hero {
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero480.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero480.jpg);
   background-size: cover;
@@ -560,37 +569,42 @@ header {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero480-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero480-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero480-2x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: url(../../images/hero768.jpg);
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero768.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero768-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero768-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero768-2x.jpg);
   }
 }
 
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url(../../images/hero1200.jpg);
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero1200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero1200.jpg);
   }
 }
 
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero1200-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero1200-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero1200-2x.jpg);
   }
-}
-
-.hero__container {
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 
 .hero__title {
@@ -787,6 +801,14 @@ header {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
@@ -817,13 +839,12 @@ header {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .team__item:not(:first-child) {
-    margin-top: 30px;
-  }
-  .team__item img {
-    width: 450px;
-  }
+.team__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.team__item img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -833,17 +854,11 @@ header {
     margin-left: 30px;
     margin-top: 30px;
   }
-  .team__item img {
-    width: 354px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
     margin-left: 0;
-  }
-  .team__item img {
-    width: 270px;
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -851,7 +866,6 @@ header {
 }
 
 .team__container {
-  max-width: 450px;
   padding-top: 30px;
   padding-bottom: 24px;
 }
@@ -991,6 +1005,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -998,9 +1013,13 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__link:hover, .clients__link:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
 @media screen and (min-width: 480px) {
   .clients__link {
-    width: 210px;
     height: 90px;
   }
 }
@@ -1017,11 +1036,6 @@ header {
     width: 170px;
     height: 90px;
   }
-}
-
-.clients__link:hover, .clients__link:focus {
-  border-color: #2196f3;
-  fill: #2196f3;
 }
 
 .clients__icon1 {
@@ -1073,15 +1087,19 @@ footer {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 480px) {
-  .container--footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.container--footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .container--footer {
+    min-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1101,6 +1119,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    min-width: 1200px;
   }
 }
 
@@ -1135,10 +1154,8 @@ footer {
   margin-top: 8px;
 }
 
-@media screen and (min-width: 480px) {
-  .middle-column {
-    margin-bottom: 60px;
-  }
+.middle-column {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1240,7 +1257,7 @@ footer {
 .footer-form__form-input {
   margin-bottom: 20px;
   height: 50px;
-  width: 450px;
+  width: 100%;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1249,6 +1266,12 @@ footer {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__form-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
