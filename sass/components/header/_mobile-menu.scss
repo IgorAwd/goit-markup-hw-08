@@ -60,10 +60,10 @@
   position: absolute;
   top: 10px;
   right: 15px;
-}
 
-.mobile-menu__icon:hover {
-  color: $accent-color;
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .mobile-menu__list {
