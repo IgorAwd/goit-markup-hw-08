@@ -1624,6 +1624,24 @@ footer {
   height: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio__examples-thumb img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__examples-thumb img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__examples-thumb img {
+    width: 370px;
+  }
+}
+
 .portfolio__examples-overlay {
   position: absolute;
   top: 0;
