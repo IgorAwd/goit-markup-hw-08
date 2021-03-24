@@ -92,6 +92,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
